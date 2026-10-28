@@ -1,0 +1,179 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* CORES (tema claro) 
+:root{
+    --fundo:#F8FAFC;
+    --card:#FFFFFF;
+    --texto:#0F172A;
+    --suave:#475569;
+    --borda:#CBD5E1;
+    --titulo:#2563EB;
+    --botao:#2563EB;
+    --botao-hover:#1D4ED8;
+}
+
+/* CORES (tema escuro)
+body.escuro{
+    --fundo:#0F172A;
+    --card:#1E293B;
+    --texto:#F1F5F9;
+    --suave:#CBD5E1;
+    --borda:#475569;
+    --titulo:#60A5FA;
+}
+
+/* TIPOGRAFIA E FUNDO */
+body{
+    font-family: Arial, sans-serif;
+    background:var(--fundo);
+    color:var(--texto);
+    line-height:1.6;
+    transition:background 0.3s, color 0.3s;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    max-width:820px;
+    margin:0 auto;
+    padding:30px 0 60px;
+}
+
+/* CARTÕES */
+.card{
+    background:var(--card);
+    border:1px solid var(--borda);
+    border-radius:14px;
+    box-shadow:0 2px 8px rgba(15,23,42,0.08);
+    padding:28px;
+    margin-bottom:28px;
+    scroll-margin-top:20px;
+    transition:background 0.3s, border-color 0.3s;
+}
+
+/* TÍTULOS */
+h1{
+    color:var(--titulo);
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+h2{
+    font-size:1.4rem;
+    color:var(--suave);
+    margin-bottom:18px;
+}
+
+/* FORMULÁRIO */
+form{
+    display:grid;
+    gap:14px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px 14px;
+    font-family: inherit;
+    font-size:1rem;
+    color:var(--texto);
+    background:var(--card);
+    border:1px solid var(--borda);
+    border-radius:8px;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:var(--titulo);
+}
+
+textarea{
+    min-height:140px;
+    resize:vertical;
+}
+
+/* BOTÕES */
+.botoes{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.botao{
+    padding:12px 22px;
+    font-family: inherit;
+    font-size:0.95rem;
+    font-weight:bold;
+    color:#FFFFFF;
+    background:var(--botao);
+    border:none;
+    border-radius:8px;
+    cursor:pointer;                 
+    transition:background 0.2s;
+}
+
+.botao:hover{
+    background:var(--botao-hover);
+}
+
+.botao:focus-visible{
+    outline:3px solid var(--titulo);
+    outline-offset:2px;
+}
+
+/* MENSAGEM DE STATUS 
+#mensagem{
+    min-height:1.4em;
+    font-size:0.95rem;
+    color:var(--titulo);
+}
+
+/* VISUALIZAÇÃO DO CURRÍCULO */
+#prev-nome{
+    font-size:2rem;
+    margin-bottom:4px;
+}
+
+.profissao{
+    font-weight:bold;
+    color:var(--suave);
+    margin-bottom:12px;
+}
+
+.sobre{
+    white-space:pre-wrap;           
+}
+
+hr{
+    border:none;
+    border-top:1px solid var(--borda);
+    margin:22px 0 14px;
+}
+
+/* ÚLTIMA VISITA */
+.visita{
+    font-size:0.9rem;
+    color:var(--suave);
+}
+
+/* RESPONSIVO (celular) */
+@media (max-width:600px){
+    h1{
+        font-size:1.6rem;
+    }
+
+    .botao{
+        flex:1 1 100%;
+    }
+}

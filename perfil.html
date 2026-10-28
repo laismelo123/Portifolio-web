@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Web Inteligente</title>
+    <link rel="stylesheet" href="CSS/perfil.css">
+    <script src="JS/perfil.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- EDITAR PERFIL (formulário) -->
+        <section class="card" id="edicao">
+            <h1>Currículo Web Inteligente</h1>
+            <h2>Editar Perfil</h2>
+
+            <form id="form-perfil">
+                <input type="text" id="nome" placeholder="Nome" aria-label="Nome" required>
+                <input type="text" id="profissao" placeholder="Profissão" aria-label="Profissão">
+                <textarea id="sobre" placeholder="Sobre você" aria-label="Sobre você"></textarea>
+
+                <div class="botoes">
+                    <button type="submit" class="botao">Salvar Perfil</button>
+                    <button type="button" class="botao" id="btn-limpar">Limpar Perfil</button>
+                    <button type="button" class="botao" id="btn-tema">Alternar Tema</button>
+                </div>
+
+                <p id="mensagem" role="status"></p>
+            </form>
+        </section>
+
+        <!-- VISUALIZAÇÃO DO CURRÍCULO -->
+        <section class="card" id="visualizacao">
+            <h2>Visualização do Currículo</h2>
+            <h3 id="prev-nome">Seu Nome</h3>
+            <p id="prev-profissao" class="profissao">Sua Profissão</p>
+            <p id="prev-sobre" class="sobre">Sua descrição aparecerá aqui.</p>
+
+            <hr>
+            <p id="ultima-visita" class="visita"></p>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
